@@ -9,3 +9,5 @@ services:
       SESSION_DRIVER: cookie
       CACHE_STORE: array
       VIEW_COMPILED_PATH: /tmp
+      APP_SERVICES_CACHE: /tmp/services.php
+      APP_PACKAGES_CACHE: /tmp/packages.php
