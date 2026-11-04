@@ -1,0 +1,8 @@
+version: "1"
+services:
+  web:
+    port: 8080
+addons:
+  db:
+    type: postgres
+    attachTo: [web]

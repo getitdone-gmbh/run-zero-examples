@@ -1,0 +1,14 @@
+version: "1"
+services:
+  web:
+    path: ./web
+    port: 8080
+  whoami:
+    image: docker.io/traefik/whoami:v1.10
+    port: 8080
+    env:
+      WHOAMI_PORT_NUMBER: "8080"
+addons:
+  db:
+    type: postgres
+    attachTo: [web]
