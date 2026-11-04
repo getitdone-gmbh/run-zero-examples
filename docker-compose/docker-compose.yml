@@ -1,4 +1,4 @@
-# Local setup. run.zero does not read this file, see run-zero.yaml for the same app on the platform.
+# Local only. On run.zero, run-zero.yaml applies.
 services:
   web:
     build: ./web

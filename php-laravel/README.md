@@ -2,13 +2,15 @@
 
 A trimmed Laravel 13 skeleton. The Paketo PHP buildpack detects `composer.json`, runs `composer install --no-dev` and serves `public/` with nginx and PHP-FPM.
 
-- Live demo: https://web-example-laravel-35398b52.run-zero.de
+- Live demo: https://web-example-laravel-8c606360.run-zero.de
 - Guide: https://run-zero.de/en/guides/php-laravel (German: https://run-zero.de/anleitungen/php-laravel)
 
 ## Files
 
 - `project.toml`: `BP_PHP_SERVER=nginx` and `BP_PHP_WEB_DIR=public` for the build
-- `run-zero.yaml`: service `web` with production env (stderr logs, cookie sessions, array cache, compiled views in /tmp)
+- `run-zero.yaml`: service `web` with production env (stderr logs, cookie sessions, array cache, caches and compiled views in /tmp)
+- `.nginx.conf.d/laravel-server.conf`: sends every route that is not a file to `index.php`
+- `.php.ini.d/laravel.ini`: loads `openssl` and `mbstring` for PHP-FPM
 - `routes/web.php`: `/` and `/api/health`
 
 ## Deploy it
