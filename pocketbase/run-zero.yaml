@@ -1,0 +1,7 @@
+version: "1"
+services:
+  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:latest
+    port: 8090
+    volumes:
+      - path: /pb_data

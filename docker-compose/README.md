@@ -21,7 +21,7 @@ A two-container compose setup (Node web app plus Postgres) and the `run-zero.yam
 
 ## Good to know
 
-- No volumes for your own containers. A container with local data, such as SQLite or PocketBase, loses it on restart. Run those elsewhere or use the postgres addon.
+- Compose volumes become `volumes: - path: /data` on the service, from the Developer plan, see the [pocketbase](../pocketbase) example. Without it local data is lost on restart.
 - A Dockerfile is ignored without a warning. `RUN apt-get`, custom base images and multi-stage builds are lost. A repo with a Dockerfile and an index.html goes live as a static page.
 - No Redis or MongoDB addon in `run-zero.yaml` today, only postgres and keycloak.
 - An image service must listen on the port you declare. The `whoami` demo is at https://whoami-example-docker-compose-da4587ce.run-zero.de

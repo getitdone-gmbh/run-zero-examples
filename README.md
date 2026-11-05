@@ -5,6 +5,7 @@ Working example apps for [run.zero](https://run-zero.de), the Platform-as-a-Serv
 | Folder | Stack | Live demo | Guide |
 | --- | --- | --- | --- |
 | [docker-compose](docker-compose) | compose file translated to run-zero.yaml, Postgres addon, image service | https://web-example-docker-compose-da4587ce.run-zero.de | [EN](https://run-zero.de/en/guides/docker-compose) · [DE](https://run-zero.de/anleitungen/docker-compose) |
+| [pocketbase](pocketbase) | ready-made image with a persistent volume | https://pocketbase-example-pocketbase-d9db184f.run-zero.de/api/collections/notes/records | [EN](https://run-zero.de/en/guides/docker-compose) · [DE](https://run-zero.de/anleitungen/docker-compose) |
 | [node-express](node-express) | Node.js 22, Express | https://web-example-node-express-2311463c.run-zero.de | [EN](https://run-zero.de/en/guides/node-express) · [DE](https://run-zero.de/anleitungen/node-express) |
 | [nextjs](nextjs) | Next.js 16, next start | https://web-example-nextjs-6733689e.run-zero.de | [EN](https://run-zero.de/en/guides/nextjs) · [DE](https://run-zero.de/anleitungen/nextjs) |
 | [python-fastapi](python-fastapi) | Python, FastAPI, Uvicorn | https://web-example-fastapi-84f30cf3.run-zero.de | [EN](https://run-zero.de/en/guides/python-fastapi) · [DE](https://run-zero.de/anleitungen/python-fastapi) |
