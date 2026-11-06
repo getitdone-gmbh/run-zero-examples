@@ -3,7 +3,7 @@
 A ready-made image with a persistent volume. The data in `/pb_data` survives restarts and deploys.
 
 - Live demo: https://pocketbase-example-pocketbase-d9db184f.run-zero.de/api/collections/notes/records (one public record, the admin login is not public)
-- Guide: https://run-zero.de/en/guides/docker-compose (German: https://run-zero.de/anleitungen/docker-compose)
+- Guide: https://run-zero.de/en/guides/pocketbase (German: https://run-zero.de/anleitungen/pocketbase)
 
 ## Tested
 
